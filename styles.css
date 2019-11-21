@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #E7717D;
+    width:100%;
+    position:fixed;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 27px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #C2CAD0;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:#AF72D5;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:95px;
+    text-shadow: #AF72D5;
+    color:white;
+    font-family: 'Cinzel', serif;
+  
+  }
+body{
+    overflow-x:hidden;
+}
+.overlay{
+    margin-top:10px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:15%;
+    font-size:20px;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+h1{
+    text-align:center;
+}
+p{
+    font-size:50px;
+    margin-left:15%;
+    margin-top:10%;
+    margin-right:15%;
+}
+.img{
+    width:80%;
+}
+.over{
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Courgette', cursive;
+    box-shadow: 0 4px 8px 0 rgba(45, 35, 102, 0.19), 0 6px 20px 0 rgba(45, 35, 102, 0.19);
+}
+* {
+    box-sizing: border-box;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .cont {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media only screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    body{
+        overflow-x:hidden;
+    }
+    .overlay{
+        width:100%;
+        margin-left:0;
+        font-size:5px;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    img{
+        width:100%;
+    }
+    .over{
+        display:flex;
+        flex-wrap:wrap;
+    }
+@media only screen and(max-width:1024px){
+
+}
+  }
