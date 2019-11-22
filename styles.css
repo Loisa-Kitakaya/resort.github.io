@@ -8,6 +8,7 @@ body {
     background-color: #E7717D;
     width:100%;
     position:fixed;
+  
   }
   
   .topnav a {
@@ -27,6 +28,10 @@ body {
   .topnav a.active {
     background-color:#AF72D5;
     color: white;
+  }
+  .conta{
+    width:100%;
+   padding-top:4%;
   }
   .centered {
     position: absolute;
@@ -75,9 +80,14 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(45, 35, 102, 0.19), 0 6px 20px 0 rgba(45, 35, 102, 0.19);
 }
 .over p{
-  margin-left: 5%;
-  margin-top:10%;
+  font-size:50px;
+    margin-left:15%;
+    margin-top:10%;
+    margin-right:15%;
 }
+* {
+    box-sizing: border-box;
+  }
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -109,6 +119,7 @@ h1{
     padding: 20px;
   }
   .row:after {
+    content: "";
     display: table;
     clear: both;
   }
@@ -140,24 +151,32 @@ h1{
         top:40%;
     }
   }
-@media only screen and(max-width:1024px) {
-  body{
-    overflow-x:hidden;
-    margin-left:0;
-    margin-right:0;
-    font-size:1.5rem;
-}
-.overlay{
-  margin-top:0;
- list-style:none;
-  margin-left:0;
-  font-size:3px;
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-.overlay p{
-  font-size:3px;
-}
+@media only screen and(max-width:1200px){
+    body{
+        overflow-x:hidden;
+        margin-left:0;
+        margin-right:0;
+    }
+    .overlay p{
+        margin-left:0;
+        font-size:5px;
+        margin-right:0;
+    }
+    .overlay img{
+        width:100%;
+    }
+    .over{
+        display:flex;
+        flex-wrap:wrap;
+        width:50%;
+        text-align:column;
+    }
+    .over p{
+      font-size:5px;
+      
+    }
+    .centered{
+        top:30%;
+        font-size:40px;
+    }
 }
