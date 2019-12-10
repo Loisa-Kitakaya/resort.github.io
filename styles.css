@@ -1,182 +1,183 @@
 body {
-    margin: 0;
+  margin: 0;
+}
+
+.top-navigation {
+  overflow: hidden;
+  background-color: #e7717d;
+  width: 100%;
+  position: fixed;
+}
+
+.top-navigation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 27px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.top-navigation a:hover {
+  background-color: #c2cad0;
+  color: black;
+}
+
+.top-navigation a.active {
+  background-color: #af72d5;
+  color: white;
+}
+.contact-class {
+  width: 100%;
+  padding-top: 4%;
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 95px;
+  text-shadow: #af72d5;
+  color: white;
+  font-family: "Cinzel", serif;
+}
+body {
+  overflow-x: hidden;
+}
+.overlay {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  font-size: 20px;
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+h1 {
+  text-align: center;
+}
+.overlay p {
+  font-size: 50px;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-right: 15%;
+}
+.img {
+  width: 80%;
+}
+.over {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  font-family: "Courgette", cursive;
+  box-shadow: 0 4px 8px 0 rgba(45, 35, 102, 0.19),
+    0 6px 20px 0 rgba(45, 35, 102, 0.19);
+}
+.over p {
+  font-size: 50px;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-right: 15%;
+}
+.me {
+  text-align: center;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.cont {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #E7717D;
-    width:100%;
-    position:fixed;
-  
+  body {
+    overflow-x: hidden;
   }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 27px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .overlay {
+    width: 130%;
+    margin-left: 0;
+    font-size: 5px;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
-  .topnav a:hover {
-    background-color: #C2CAD0;
-    color: black;
+  img {
+    width: 100%;
   }
-  
-  .topnav a.active {
-    background-color:#AF72D5;
-    color: white;
-  }
-  .conta{
-    width:100%;
-    padding-top:4%;
+  .over {
+    display: flex;
+    flex-wrap: wrap;
+    width: 130%;
+    justify-content: space-around;
   }
   .centered {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:95px;
-    text-shadow: #AF72D5;
-    color:white;
-    font-family: 'Cinzel', serif;
-  
+    font-size: 50px;
+    top: 40%;
   }
-body{
-    overflow-x:hidden;
 }
-.overlay{
-    margin-top:10px;
-    display:flex;
-    justify-content: space-between;
-    margin-left:15%;
-    font-size:20px;
-    width: 70%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}
-h1{
-    text-align:center;
-}
-.overlay p{
-    font-size:50px;
-    margin-left:15%;
-    margin-top:10%;
-    margin-right:15%;
-}
-.img{
-    width:80%;
-}
-.over{
-    display:flex;
-    justify-content:space-between;
+@media only screen and(max-width:1200px) {
+  body {
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .overlay p {
+    margin-left: 0;
+    font-size: 5px;
+    margin-right: 0;
+  }
+  .overlay img {
     width: 100%;
-    background-color: white;
-    font-family: 'Courgette', cursive;
-    box-shadow: 0 4px 8px 0 rgba(45, 35, 102, 0.19), 0 6px 20px 0 rgba(45, 35, 102, 0.19);
-}
-.over p{
-  font-size:50px;
-    margin-left:15%;
-    margin-top:10%;
-    margin-right:15%;
-}
-.me{
-  text-align:center;
-}
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
   }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  .cont {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-  }
-  .column {
-    float: left;
+  .over {
+    display: flex;
+    flex-wrap: wrap;
     width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+    text-align: column;
+    box-shadow: none;
   }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .over p {
+    font-size: 5px;
   }
-  @media only screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-    body{
-        overflow-x:hidden;
-    }
-    .overlay{
-        width:130%;
-        margin-left:0;
-        font-size:5px;
-        display:flex;
-        flex-wrap:wrap;
-    }
-    img{
-        width:100%;
-    }
-    .over{
-        display:flex;
-        flex-wrap:wrap;
-        width:130%;
-        justify-content: space-around;
-    }
-    .centered{
-        font-size:50px;
-        top:40%;
-    }
+  .centered {
+    top: 30%;
+    font-size: 40px;
   }
-@media only screen and(max-width:1200px){
-    body{
-        overflow-x:hidden;
-        margin-left:0;
-        margin-right:0;
-    }
-    .overlay p{
-        margin-left:0;
-        font-size:5px;
-        margin-right:0;
-    }
-    .overlay img{
-        width:100%;
-    }
-    .over{
-        display:flex;
-        flex-wrap:wrap;
-        width:50%;
-        text-align:column;
-        box-shadow:none;
-    }
-    .over p{
-      font-size:5px;
-      
-    }
-    .centered{
-        top:30%;
-        font-size:40px;
-    }
 }

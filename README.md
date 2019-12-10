@@ -14,7 +14,7 @@ This project is advertising a private island resort based in Peponi which has op
 The resort offer:
 * camping sites
 * boat riding
-* Accomodation facilities etc.
+* acommodation facilities etc.
 
 #### Technologies
 
